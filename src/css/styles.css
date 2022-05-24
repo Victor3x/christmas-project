@@ -80,7 +80,7 @@ body {
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
 h1, h2, h3, h4 {
@@ -107,6 +107,51 @@ button {
   outline: none;
 }
 
+/*=============== THEME  ===============*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.change-theme {
+  color: var(--title-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/*=============== VARIABLES DARK THEME ===============*/
+body.dark-theme {
+  --title-color: hsl(355, 4%, 95%);
+  --text-color: hsl(355, 4%, 75%);
+  --body-color: hsl(355, 4%, 12%);
+  --container-color: hsl(355, 4%, 16%);
+}
+
+.dark-theme .scroll-header,
+.dark-theme .nav__menu {
+  box-shadow: 0 2x 4px hsla(0, 0%, 4%, .3);
+}
+
+.dark-theme .message__container {
+  background-color: var(--container-color);
+}
+
+.dark-theme .message__input {
+  background-color: var(--body-color);
+}
+
+.dark-theme .message__button {
+  background-color: var(--first-color-alt);
+}
+
+.dark-theme .message__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background: hsl(355, 8%, 30%);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container {
@@ -141,6 +186,7 @@ button {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+  transition: .4s; /*For animation dark mode*/
 }
 
 /*=============== NAV ===============*/
