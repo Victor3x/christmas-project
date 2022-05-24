@@ -655,3 +655,35 @@ body.dark-theme {
     justify-content: center;
   }
 }
+
+/* medium devices */
+@media screen and (min-width: 576px) {
+  .home__description {
+    padding: 0 8rem;
+  }
+
+  .giving__container {
+    grid-template-columns: repeat(2, 142px);
+    justify-content: center;
+    gap: 2.5rem 3.5rem;
+  }
+
+  .celebrate__description {
+    padding: 0 4rem;
+  }
+
+  .gift__container {
+    grid-template-columns: repeat(2, 180px);
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .message__input,
+  .message__button {
+    width: 60%;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
