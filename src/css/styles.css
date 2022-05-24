@@ -229,6 +229,10 @@ button {
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
 }
 
+.active-link {
+  color: var(--first-color)
+}
+
 /*=============== HOME ===============*/
 
 .home__container {
