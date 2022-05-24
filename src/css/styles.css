@@ -638,3 +638,20 @@ body.dark-theme {
   background: hsl(355, 32%, 17%);
   border-radius: 1rem;
 }
+
+/* Small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .giving__container {
+    gap: 1rem;
+  }
+
+  .gift__container {
+    grid-template-columns: 150px;
+    justify-content: center;
+  }
+}
